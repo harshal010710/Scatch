@@ -1,6 +1,7 @@
 let express = require("express")
 let app = express()
-let {userData} = require("./models/user-model")
+let {userData} = require("./models/user.model")
+let {productData} = require("./models/product.model")
 let {sequelize} = require("./lib/index")
 
 let cookieParser = require("cookie-parser")

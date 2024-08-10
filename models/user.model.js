@@ -1,21 +1,21 @@
-const { TEXT, BOOLEAN, ARRAY, NUMBER } = require("sequelize")
+// const { TEXT, BOOLEAN, ARRAY, NUMBER } = require("sequelize")
 const {DataTypes, sequelize} = require("../lib/index")
 
 const userDataModel = sequelize.define("userDataModel", {
-	fullname: TEXT,
-	email: TEXT,
-	password: TEXT,
+	fullname: DataTypes.TEXT,
+	email: DataTypes.TEXT,
+	password: DataTypes.TEXT,
 	cart: {
 		type: [],
 		default: []
 	},
-	isAdmin: BOOLEAN,
+	isAdmin: DataTypes.BOOLEAN,
 	orders: {
 		type : [],
 		default: []
 	},
-	contact: NUMBER,
-	picture: TEXT
+	contact: DataTypes.NUMBER,
+	picture: DataTypes.TEXT
 })
 
 module.exports = {userDataModel}
