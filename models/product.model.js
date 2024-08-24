@@ -1,4 +1,4 @@
-let {DataTypes, sequelize} = require("../lib/index")
+let {DataTypes, sequelize} = require("../config/sequelize.configuration")
 
 let productModel = sequelize.define("productModel", {
 	Image : DataTypes.TEXT,

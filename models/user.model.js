@@ -1,5 +1,5 @@
 // const { TEXT, BOOLEAN, ARRAY, NUMBER } = require("sequelize")
-const {DataTypes, sequelize} = require("../lib/index")
+const {DataTypes, sequelize} = require("../config/sequelize.configuration")
 
 const userDataModel = sequelize.define("userDataModel", {
 	fullname: DataTypes.TEXT,
